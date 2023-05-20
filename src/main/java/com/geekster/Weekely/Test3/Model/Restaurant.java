@@ -1,9 +1,6 @@
 package com.geekster.Weekely.Test3.Model;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import jakarta.validation.constraints.Email;
 import lombok.*;
 
@@ -13,6 +10,7 @@ import lombok.*;
 @Getter
 @Setter
 @Entity
+@Table(name = "Restaurant")
 public class Restaurant {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
